@@ -1,39 +1,135 @@
 body {
     font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-
-h1 {
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
-}
-
-p {
-    color: #666;
-    font-size: 16px;
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 0 1rem;
+    color: #222;
+    background: #f7f7f7;
     line-height: 1.6;
-    margin: 20px 0;
+}
+
+h1, h2, h3 {
+    color: #2d2d2d;
 }
 
 img {
-    max-width: 100%;
-    width: auto;
-    border-radius: 10px;
-    height: auto;
     display: block;
-    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 10px;
 }
 
-a {
-    color: #b3490fb5;
-    text-decoration: none;
-    font-weight: bold;
+button {
+    margin: 0.25rem;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background: #4b4bff;
+    color: white;
+    cursor: pointer;
 }
 
-a:hover {
-    text-decoration: underline;
+button:hover {
+    background: #3030d0;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.table-frame {
+    margin-top: 1rem;
+    overflow-x: auto;
+}
+
+#example {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+#example th,
+#example td {
+    border: 1px solid #d0d0d0;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+#example th {
+    background: #eaeaff;
+}
+
+.card {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 500px;
+    resize: vertical;
+    padding: 0.6rem;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+}
+
+.preview-box {
+    min-height: 50px;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    border-radius: 6px;
+}
+
+#keybox {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 6px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#status {
+    color: #666;
+}
+
+#animalTitle {
+    cursor: pointer;
+}
+
+#harjoitus1,
+#harjoitus2 {
+    text-align: center;
+}
+
+#harjoitus1 {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#harjoitus2 {
+    font-size: 1.2em;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0 0.75rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
 }
